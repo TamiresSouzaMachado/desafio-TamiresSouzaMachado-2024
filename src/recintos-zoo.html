@@ -1,0 +1,67 @@
+<meta charset="UTF-8">
+
+<script>
+    class RecintosZoo {
+        analisaRecintos(animal, quantidade) {
+
+        }
+
+    }
+    var animais = "LEAO" || "CROCODILO" || "MACACO" || "GAZELA" || "HIPOPOTAMO";
+    var recinto1 = 7;
+    var recinto2 = 5;
+    var recinto3 = 6;
+    var recinto4 = 8;
+    var recinto5 = 8;
+
+    var tipoAnimal = prompt("Insira o tipo de animal sem acentos").toUpperCase();
+    if (tipoAnimal != animais){
+        document.write ("Animal inválido")
+        document.write ("<br>")
+    }
+    var quantidadeAnimal = parseInt(prompt("Insira a quantidade de animais"));
+    if (isNaN(quantidadeAnimal)){
+        document.write ("Quantidade inválida")
+        document.write ("<br>")
+    }
+
+    if (animais == "LEAO" && quantidadeAnimal <= recinto5){
+        document.write ("Há recintos disponíveis.");
+        document.write ("<br>")
+        document.write (" O animal LEAO será destinado para o recinto número 5");
+    } else if (animais == "CROCODILO" && quantidadeAnimal <= recinto4){
+        document.write ("Há recintos disponíveis.");
+        document.write ("<br>")
+        document.write (" O animal CROCODILO será destinado para o recinto número 4");
+    } else if (animais == "MACACO" && quantidadeAnimal <=recinto1){
+        document.write ("Há recintos disponíveis.");
+        document.write ("<br>")
+        document.write (" O animal MACACO serpa destinado para o recinto número 1");
+    } else if (animais == "GAZELA" && quantidadeAnimal <recinto3){
+        document.write ("Há recintos disponíveis.");
+        document.write ("<br>")
+        document.write (" O animal GAZELA será destinado para o recinto número 3");
+    } else if (animais == "HIPOPOTAMO" && quantidadeAnimal <recinto3){
+        document.write ("Há recintos disponívei.s");
+        document.write ("<br>")
+        document.write (" O animal HIPOPOTAMO será destinado para o recinto número 3");
+    }
+    
+    if (animais =="LEAO" && quantidadeAnimal >8){
+        document.write ("Não há recinto viável para LEAO");
+        document.write ("<br>")
+    } else if (animais =="CROCODILO" && quantidadeAnimal >8){
+        document.write ("Não há recinto viável para CROCODILO");
+        document.write ("<br>")
+    } else if (animais =="MACACO" && quantidadeAnimal >7){
+        document.write ("Não há recinto viável para MACACO");
+        document.write ("<br>")
+    } else if (animais =="GAZELA" && quantidadeAnimal >5){
+        document.write ("Não há recinto viável para GAZELA");
+        document.write ("<br>")
+    } else if (animais =="HIPOPOTAMO" && quantidadeAnimal >5){
+        document.write ("Não há recinto viável para HIPOPOTAMO");
+    }
+    
+
+</script>
